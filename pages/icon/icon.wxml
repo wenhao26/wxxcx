@@ -1,0 +1,26 @@
+<view class='group'>
+  <text class='group-title'>icon组件</text>
+  <view class='group-item'>
+    <block wx:for='{{iconSize}}'>
+      <icon type='success' size='{{item}}' />
+    </block>
+  </view>
+
+  <view class='group-item'>
+    <block wx:for='{{iconType}}'>
+      <icon type='{{item}}' />
+    </block>
+  </view>
+
+  <view class='group-item'>
+    <block wx:for='{{iconColor}}'>
+      <icon type='waiting' color='{{item}}' />
+    </block>
+  </view>
+
+  <view class='tips'>
+    <icon type='warn' />
+    <text class='tips-title'>银行卡的持有人信息，需要和本人身份证信息一致</text>
+  </view>
+  
+</view>

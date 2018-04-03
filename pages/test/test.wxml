@@ -1,0 +1,156 @@
+<view class='group'>
+  <text class='group-title'>navigator组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <navigator url="/pages/icon/icon" hover-class="navigator-hover">跳转到新页面</navigator>
+    <navigator url="/pages/text/text" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+    <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+  </view>
+  <text class='group-title'>form组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">slider</view>
+    <slider name="slider" show-value ></slider>
+  </view>
+
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label><radio value="radio1"/>radio1</label>
+      <label><radio value="radio2"/>radio2</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>checkbox1</label>
+      <label><checkbox value="checkbox2"/>checkbox2</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
+    <form bindsubmit='formSubmit' bindreset='formReset'>
+      <label><text>账号：</text><input name='uname' placeholder='请输入用户名' /></label>
+      <label><text>性别：</text>
+        <radio-group name='gender'>
+          <radio value='男' />男 <radio value='女' />女
+        </radio-group>
+      </label>
+      <label><text>爱好：</text>
+        <checkbox-group name='hobby'>
+          <checkbox value='乒乓球' />乒乓球<checkbox value='篮球' />篮球<checkbox value='足球' />足球
+        </checkbox-group>
+      </label>
+      <label style='display:block'><text>开启共享：</text>
+        <switch checked='true' name='is_share' />
+      </label>
+      <label><text>说明：</text>
+        <textarea maxlength='200' placeholder='请输入简要说明' name='info'></textarea>
+      </label>
+      <button formType='submit'>提交</button>
+      <button formType='reset'>重置</button>
+    </form>
+  </view>
+  <text class='group-title'>textarea组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <textarea placeholder='请输入内容' style='width:100%;border:1px solid #f2f2f2' maxlength='100' />
+  </view>
+  <text class='group-title'>switch组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <switch checked />开启提醒
+  </view>
+  <text class='group-title'>slider组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <slider min='0' max='100' show-value='true' step='5' selected-color='green' block-color='red' bindchange='sliderChange' />
+  </view>
+  <text class='group-title'>radio-group组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <radio-group>
+    <label><radio value='男人' checked color='red' />男人</label>
+    <label><radio value='女人' color='green' />女人</label>
+    </radio-group>
+  </view>
+  <text class='group-title'>picker组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    mode=selector:
+    <picker bindchange='pickerChange1' bindcancel="pickerCel1" mode='selector' range='{{rangeArr}}' value='{{rangeVal}}'>
+      <view>当前选择：{{rangeArr[rangeVal]}}</view>
+    </picker>
+    mode=multiSelector:
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+  </view>
+  <text class='group-title'>input组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    密码：<input type='text' password='true' placeholder='请输入密码' placeholder-style='color:red' />
+    禁用：<input type='text' placeholder='请输入密码' disabled />
+    限制长度：<input type='text' placeholder='请输入密码' maxlength='10' />
+  </view>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    text:<input type='text' placeholder='请输入内容' />
+    number:<input type='number' placeholder='请输入内容' />
+    idcard:<input type='idcard' placeholder='请输入内容' />
+    digit:<input type='digit' placeholder='请输入内容' />
+    send:<input type='text' placeholder='请输入内容' confirm-type='send' />
+    search:<input type='text' placeholder='请输入内容' confirm-type='search' />
+    next:<input type='text' placeholder='请输入内容' confirm-type='next' />
+    go:<input type='text' placeholder='请输入内容' confirm-type='go' />
+    done:<input type='text' placeholder='请输入内容' confirm-type='donego' adjust-position />
+  </view>
+  <text class='group-title'>checkbox-group组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <checkbox-group bindchange='checkChange'>
+      <label>
+        <checkbox value='天河区' checked />天河区
+      </label>
+      <label>
+        <checkbox value='海珠区' />海珠区
+      </label>
+      <label>
+        <checkbox value='越秀区' color='red' />越秀区
+      </label>
+      <label>
+        <checkbox value='白云区' disabled='false' />白云区
+      </label>
+    </checkbox-group>
+  </view>
+
+  <text class='group-title'>button组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <button type='warn' size='default'>button</button>
+    <button type='primary' size='default' loading disabled='false'>button</button>
+    <button type='primary' size='default' >button</button>
+    <button type='default' size='default'>button</button>
+    <button type='warn' size='mini'>button</button>
+  </view>
+
+  <text class='group-title'>progress组件</text>
+  <view style='width: 90%;margin: 20rpx auto;'>
+    <button bindtap='startLoad'><icon type='{{iconType}}' size='20' /></button>
+    <progress percent='{{percent}}' show-info stroke-width='{{width}}' active='true' active-mode='forwards' activeColor='{{activeColor}}' style='margin-bottom: 40px;'></progress>
+   
+    <progress percent='45'></progress>
+    <progress percent='45' show-info='true'></progress>
+    <progress percent='45' show-info='true' stroke-width='10'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='pink'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='red' activeColor='green'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='red' activeColor='green' backgroundColor='red'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='pink' activeColor='green' backgroundColor='red' active='true'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='red' activeColor='green' backgroundColor='red' active='true' active-mode='backwards'></progress>
+    <progress percent='45' show-info='true' stroke-width='10' color='red' activeColor='green' backgroundColor='red' active='true' active-mode='forwards'></progress>
+  </view>
+</view>

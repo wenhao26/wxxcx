@@ -1,0 +1,11 @@
+<view class='group'>
+  <text class='group-title'>text组件</text>
+  <view class='group-item'>
+    <text>{{text}}</text>
+    <button bindtap='add'>添加</button>
+    <button bindtap='remove'>删除</button>
+  </view>
+  <view class='group-item'>
+    <text selectable='false' space='emsp' decode='true'>酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆酒煮咖啡豆 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+  </view>
+</view>

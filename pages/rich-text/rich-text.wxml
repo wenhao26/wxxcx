@@ -1,0 +1,6 @@
+<view class='group'>
+  <text class='group-title'>rich-text组件</text>
+  <view>
+    <rich-text nodes="{{nodes}}"></rich-text>
+  </view>
+</view>

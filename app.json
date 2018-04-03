@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/test2/test2",
+    "pages/api/api",
+    "pages/media/media",
+    "pages/test/test",
+    "pages/rich-text/rich-text",
+    "pages/text/text",
+    "pages/icon/icon",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "胡椒耗嘢",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "初始页",
+        "iconPath": "images/icon/normal/index.png",
+        "selectedIconPath": "images/icon/selected/index.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "API页",
+        "iconPath": "images/icon/normal/more.png",
+        "selectedIconPath": "images/icon/selected/more.png"
+      }
+    ]
+  }
+}

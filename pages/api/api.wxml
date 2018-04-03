@@ -1,0 +1,9 @@
+<!--pages/api/api.wxml-->
+<button>获取用户绑定的手机号码</button>
+<button style='margin-top:60px;' bindtap='getUserOpenid'>获取用户openid</button>
+openid:<text style='color:blue'>{{openid}}</text>
+session_key:<text style='color:red'>{{session_key}}</text>
+<button bindtap='getUserInfo'>获取用户信息</button>
+昵称：<text>{{userinfos.nickName}}</text>
+头像：<image src='{{userinfos.avatarUrl}}' style='width:100px;height:100px;border:1px solid red'></image>
+性别：<text>{{userInfos.gender}}</text>
