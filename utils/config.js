@@ -1,3 +1,4 @@
+// 配置文件
 var appConfig = {
   baseUrl: 'http://192.168.6.23/'
 }
@@ -5,3 +6,4 @@ var appConfig = {
 module.exports = {
   appConfig
 }
+
