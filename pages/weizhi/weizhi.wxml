@@ -1,0 +1,36 @@
+<!--pages/weizhi/weizhi.wxml-->
+<text>经度：{{latitude}}，纬度：{{longitude}}</text>
+<button bindtap='getLocation'>获取位置</button>
+<view>===================================</view>
+<text>选择的位置信息：{{locationInfo}}</text>
+<button bindtap='chooseLocation'>打开地图选择位置</button>
+<view>===================================</view>
+<button bindtap='openLocation'>使用微信内置地图查看位置</button>
+<view>===================================</view>
+<map id='myMap' latitude='{{latitude}}' longitude='{{longitude}}' markers='{{markers}}' circles='{{circles}}' style='width:100%' show-location />
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

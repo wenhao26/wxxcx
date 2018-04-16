@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/test2/test2",
+    "pages/weizhi/weizhi",
+    "pages/image/image",
     "pages/api/api",
+    "pages/test2/test2",
     "pages/media/media",
     "pages/test/test",
     "pages/rich-text/rich-text",

@@ -3,6 +3,11 @@ var appConfig = {
   baseUrl: 'http://192.168.6.23/'
 }
 
+function getNumber() {
+  return 123
+}
+
 module.exports = {
-  appConfig
+  appConfig,
+  getNumber: getNumber
 }

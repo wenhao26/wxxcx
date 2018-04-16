@@ -1,0 +1,8 @@
+<!--pages/image/image.wxml-->
+<view style='margin:20px auto;display:block;text-align:center'>
+  <image mode='aspectFill' src='{{imgPath}}' style='width:100px;height:100px;border:1px solid #f1f1f1;border-radius:2px' bindtap='previewCurrImg'></image>
+</view>
+
+<view>=============================================</view>
+
+<button bindtap='chooseImg'>选择图片</button>

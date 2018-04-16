@@ -1,22 +1,46 @@
-// pages/test2/test2.js
-var config = require('../../utils/config.js')
-
+// pages/image/image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    imageList: [],
+    imgPath: '../../images/icon/normal/index.png'
+  },
+
+  /**
+   * 选择图片
+   */
+  chooseImg: function() {
+    var that = this
+    wx.chooseImage({
+      count: 4,
+      sizeType: ['original'],
+      success: function(res) {
+        console.log(res)
+        that.setData({
+          imageList: res.tempFilePaths,
+          imgPath: res.tempFilePaths[0]
+        })
+      },
+    })
+  },
+
+  /**
+   * 预览图片
+   */
+  previewCurrImg: function() {
+    wx.previewImage({
+        urls: this.data.imageList,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(config.appConfig.baseUrl)
-    var n = config.getNumber()
-    console.log(n)
+  
   },
 
   /**

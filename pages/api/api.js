@@ -97,6 +97,7 @@ Page({
               wx.getUserInfo({
                 lang: 'zh_CN',
                 success: function (res) {
+                  console.log(res.userInfo)
                   that.setData({
                     'userinfos.nickName': res.nickName
                   })
@@ -109,7 +110,7 @@ Page({
           wx.getUserInfo({
             lang: 'zh_CN',
             success: function (res) {
-              console.log(res.userInfo.gender)
+              console.log(res.userInfo)
               that.setData({
                 'userinfos.nickName': res.userInfo.nickName,
                 'userinfos.avatarUrl': res.userInfo.avatarUrl,
