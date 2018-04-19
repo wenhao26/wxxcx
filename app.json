@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/systeminfo/systeminfo",
+    "pages/canvas/canvas",
     "pages/weizhi/weizhi",
     "pages/image/image",
     "pages/api/api",
