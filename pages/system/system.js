@@ -1,4 +1,4 @@
-// pages/systeminfo/systeminfo.js
+// pages/system/system.js
 Page({
 
   /**

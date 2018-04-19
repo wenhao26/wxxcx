@@ -12,7 +12,8 @@
     "pages/text/text",
     "pages/icon/icon",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/system/system"
   ],
   "window": {
     "backgroundTextStyle": "light",
