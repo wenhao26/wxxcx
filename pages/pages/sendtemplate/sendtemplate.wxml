@@ -1,0 +1,10 @@
+<!--sendtemplate.wxml-->
+<view>{{d}}</view>
+<view>
+  <form class="form-box" name='pushMsgFm' report-submit bindsubmit='orderSign'>  
+    <text class="title-txt">产品名称:</text><input type="text" class="input-txt" name="name" value='' placeholder="✎请输入名称" />  
+    <text class="title-txt">产品描述:</text><input type="text" class="input-txt" name='desc' placeholder="✎请输入描述" />  
+    <text class="title-txt">是否试用:</text><switch type="switch" checked class="select-txt" name='no' />  
+    <button type="primary" class="submit-btn" form-type="submit">提 交</button>  
+  </form>
+</view>

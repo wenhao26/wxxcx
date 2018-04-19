@@ -1,0 +1,8 @@
+<!--record.wxml-->
+<view class="record-box">
+  <text class="tips">{{recordTips}}</text>
+  <view class="record-btn">
+    <button type="primary" bindtap="startRecord">Start</button>
+    <button type="default" bindtap="stopRecord">Stop</button>
+  </view>
+</view>

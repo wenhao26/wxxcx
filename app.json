@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/systeminfo/systeminfo",
+    "pages/system/system",
     "pages/canvas/canvas",
     "pages/weizhi/weizhi",
     "pages/image/image",
@@ -12,8 +12,7 @@
     "pages/text/text",
     "pages/icon/icon",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/system/system"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

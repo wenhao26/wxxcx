@@ -1,26 +1,44 @@
-// pages/system/system.js
+// uploadimgs.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    imgLists: false
   },
 
-  getSysInfo: function(e) {
-    wx.getSystemInfo({
+  /**
+   * 选择图片
+   */
+  chooseImgs: function () {
+    var that = this
+    wx.chooseImage({
+      count: 4,
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
       success: function(res) {
-        console.log(res)
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        var tempFilePaths = res.tempFilePaths
+        app.imgLists = tempFilePaths
+        that.setData({
+          imgLists: true,
+          imgPath: tempFilePaths
+        })
+        console.log(tempFilePaths)
       },
     })
   },
 
-  setvibrateLong: function() {
-    wx.vibrateLong({
-      success: function(res) {
-        console.log('使手机发生较长时间的振动（400ms）')
-      }
+  /**
+   * 浏览图片
+   */
+  previewImgs: function () {
+    var imgLists = app.imgLists
+    wx.previewImage({
+      current: imgLists[0],
+      urls: imgLists,
     })
   },
 

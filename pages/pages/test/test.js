@@ -1,26 +1,47 @@
-// pages/system/system.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    hasUserInfo: false
   },
 
-  getSysInfo: function(e) {
-    wx.getSystemInfo({
-      success: function(res) {
-        console.log(res)
-      },
-    })
+  /**
+   * 获取用户信息
+   */
+  getUserInfo: function() {
+    console.log(app.globalData)
+    var that = this
+    if (app.globalData.hasLogin === false) {
+      wx.login({
+        success: _getUserInfo
+      })
+    } else {
+      _getUserInfo()
+    }
+
+    function _getUserInfo() {
+      wx.getUserInfo({
+        success: function(res) {
+          that.setData({
+            hasUserInfo: true,
+            userInfo: res.userInfo
+          })
+          that.update()
+        }
+      })  
+    }
   },
 
-  setvibrateLong: function() {
-    wx.vibrateLong({
-      success: function(res) {
-        console.log('使手机发生较长时间的振动（400ms）')
-      }
+  /**
+   * 清空会员登录信息
+   */
+  clear: function() {
+    this.setData({
+      hasUserInfo: false,
+      userInfo: {}
     })
   },
 

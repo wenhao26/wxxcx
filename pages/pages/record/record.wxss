@@ -1,0 +1,22 @@
+/* record.wxss */
+.record-box {
+  text-align: center;
+}
+.tips {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35rpx;
+  color: #fff;
+  margin-top:30px;
+  display: block;
+  background: #ccc;
+  padding: 12px 2px;
+}
+.record-btn {
+  margin: 20px auto;
+  float: left;
+}
+.record-btn button {
+  width: 70px;
+  float: left;
+  margin: 10px;
+}

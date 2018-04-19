@@ -1,27 +1,51 @@
-// pages/system/system.js
+// record.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    recordTips: '暂无录音操作',
   },
 
-  getSysInfo: function(e) {
-    wx.getSystemInfo({
-      success: function(res) {
-        console.log(res)
-      },
+  /**
+   * 开始录音
+   */
+  startRecord: function () {
+    var that = this
+    that.setData({
+      recordTips: '录音中...'
     })
-  },
-
-  setvibrateLong: function() {
-    wx.vibrateLong({
-      success: function(res) {
-        console.log('使手机发生较长时间的振动（400ms）')
+    wx.startRecord({
+      success: function (res) {
+        var tempFilePath = res.tempFilePath
+        console.log(tempFilePath)
+      },
+      fail: function (res) {
+        //录音失败
+      },
+      complete: function () {
+        //录音完成
       }
     })
+    setTimeout(function () {
+      //结束录音  
+      that.setData({
+        recordTips: '结束录音'
+      })
+      wx.stopRecord()
+    }, 5000)
+  },
+
+  /**
+   * 结束录音
+   */
+  stopRecord: function () {
+    var that = this
+    that.setData({
+      recordTips: '结束录音'
+    })
+    wx.stopRecord()
   },
 
   /**

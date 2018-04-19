@@ -1,0 +1,18 @@
+/* uploadimgs.wxss */
+.choose-img {
+  margin: 20px auto;
+}
+.img-box {
+  width: 300px;
+  height: 80px;
+  margin: 10px auto;
+}
+.img-box image {
+  width: 60px;
+  height: 60px;
+  margin: 6px;
+  background: #ccc
+}
+.choose-img button {
+  width: 150px;
+}

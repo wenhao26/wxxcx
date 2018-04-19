@@ -1,0 +1,25 @@
+/* sendtemplate.wxss */
+.container {
+  padding: 0;
+  margin: 0;
+}
+.title-txt {
+  font-size: 16px;
+  padding: 12px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.input-txt {
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  padding: 12px;
+  width: 100%;
+}
+.select-txt {
+  padding: 12px;
+}
+.submit-btn {
+  font-size: 16px;
+  width: 90%;
+  margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="newsItem">
+        <view class="ns-list">
+             <view class="ns-list-img"><image class="" src=""></image></view>
+             <view class="ns-list-con">
+                    <view class="ns-list-title">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</view>
+                    <view class="ns-list-tips">
+                          <view class="ns-list-ar fl">作者：傻逼</view>
+                          <view class="ns-list-timer fr">2小时前</view>
+                    </view>
+             </view>
+        </view>
+        <view class="ns-list">
+             <view class="ns-list-img"><image class="" src=""></image></view>
+             <view class="ns-list-con">
+                    <view class="ns-list-title">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</view>
+                    <view class="ns-list-tips">
+                          <view class="ns-list-ar fl">作者：傻逼</view>
+                          <view class="ns-list-timer fr">2小时前</view>
+                    </view>
+             </view>
+        </view>
+        <view class="ns-list">
+             <view class="ns-list-img"><image class="" src=""></image></view>
+             <view class="ns-list-con">
+                    <view class="ns-list-title">adsjfgsdjfhadfhkjsadfhjsdhfjasdhfajskhfjaskdfhajskdfhjasdkhfjsdkahfjskdfhsjadkfhsdkjfhjasdhfjsdhfjasdhfjsdhfjsdhfjsdhf</view>
+                    <view class="ns-list-tips">
+                          <view class="ns-list-ar fl">作者：傻逼</view>
+                          <view class="ns-list-timer fr">2小时前</view>
+                    </view>
+             </view>
+        </view>
+</view>

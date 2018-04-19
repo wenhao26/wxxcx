@@ -1,4 +1,4 @@
-// pages/system/system.js
+// pages/api/pages/camera/camera.js
 Page({
 
   /**
@@ -8,18 +8,15 @@ Page({
   
   },
 
-  getSysInfo: function(e) {
-    wx.getSystemInfo({
+  takePhoto: function() {
+    var that = this
+    const ctx = wx.createCameraContext()
+    ctx.takePhoto({
+      quality: 'high',
       success: function(res) {
-        console.log(res)
-      },
-    })
-  },
-
-  setvibrateLong: function() {
-    wx.vibrateLong({
-      success: function(res) {
-        console.log('使手机发生较长时间的振动（400ms）')
+        that.setData({
+          src: res.tempImagePath
+        })
       }
     })
   },

@@ -1,0 +1,33 @@
+.page-body-info {
+  text-align: center
+}
+
+.page-body-title {
+  font-size: 38rpx;
+  padding-bottom: 10px 
+}
+
+.page-body-text {
+  color: #ccc;
+  font-size: 30rpx
+}
+
+.btn-area {
+  margin: 40px auto
+}
+
+.btn-area button {
+  margin: 15px 0;
+  width: auto
+}
+
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.userinfo-nickname {
+  color: #ccc;
+  font-size: 30rpx
+}

@@ -1,2 +1,7 @@
 <!--pages/system/system.wxml-->
-<text>pages/system/system.wxml</text>
+<text>设备系统信息</text>
+<button bindtap='getSysInfo'>获取信息</button>
+<text>=======================================</text>
+<button bindtap='setvibrateLong'>使手机发生较长时间的振动（400ms）</button>
+
+

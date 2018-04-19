@@ -1,4 +1,4 @@
-// pages/system/system.js
+// pages/api/pages/newslist/newslist.js
 Page({
 
   /**
@@ -6,22 +6,6 @@ Page({
    */
   data: {
   
-  },
-
-  getSysInfo: function(e) {
-    wx.getSystemInfo({
-      success: function(res) {
-        console.log(res)
-      },
-    })
-  },
-
-  setvibrateLong: function() {
-    wx.vibrateLong({
-      success: function(res) {
-        console.log('使手机发生较长时间的振动（400ms）')
-      }
-    })
   },
 
   /**

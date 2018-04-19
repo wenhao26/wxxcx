@@ -1,0 +1,7 @@
+<!--uploadimgs.wxml-->
+<view class="choose-img">
+  <view class="img-box" wx:if="{{imgLists === true}}">
+    <image wx:for="{{imgPath}}" src="{{item}}" bindtap="previewImgs"></image>
+  </view>
+  <button type="primary" bindtap="chooseImgs">chooseImages</button>
+</view>
