@@ -1,0 +1,10 @@
+<!-- <button open-type="share">share</button>
+<button bindtap="getShareInfo">getShareInfo</button> -->
+<text>===============================================</text>
+<!-- <open-data type="groupName" open-gid="GhEX80CoCD2D-cTQKDPFKac01PLw"></open-data>
+<open-data type="userNickName"></open-data> -->
+                                      
+<open-data type="groupName" open-gid="GhEx80HeYhZilF7aam6G2dWwpu78"></open-data>
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>

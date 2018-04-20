@@ -20,16 +20,25 @@ Page({
   
   },
 
+  getSysInfo: function() {
+    wx.getSystemInfo({
+      success: function(res) {
+        console.log(res)
+      },
+    })
+  },
+
   /**
    * 选择媒体视频
    */
   bindButtonTap: function() {
     var that = this
     wx.chooseVideo({
-        sourceType: ['album','camera'],
-        maxDuration: 60,
-    camera: 'back',
+        sourceType: ['album', 'camera'],
+        maxDuration: 30,
+        camera: 'back',
         success: function(res) {
+            console.log(res)
             that.setData({
                 src: res.tempFilePath
             })

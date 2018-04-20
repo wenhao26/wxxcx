@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/share/share",
+    "pages/pages/video/video",
     "pages/system/system",
     "pages/canvas/canvas",
     "pages/weizhi/weizhi",
